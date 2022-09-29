@@ -1,24 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import vite from './assets/vite.svg'
-import './App.css'
+import { ThemeProvider } from 'styled-components'
+import { BrowserRouter } from 'react-router-dom'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { GlobalStyle } from './styles/global'
+import { defaultTheme } from './styles/theme/default'
+import { Router } from './Router'
+import { Home } from './pages/Home'
 
+export function App() {
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={vite} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Diego de Almeida Cunha</h1>
-    </div>
+    <ThemeProvider theme={defaultTheme}>
+      <Home />
+      <GlobalStyle />
+    </ThemeProvider>
   )
+  
 }
-
-export default App
