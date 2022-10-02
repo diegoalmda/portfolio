@@ -20,16 +20,17 @@ interface ActiveMenuProps {
 export const SideMenuContainer = styled.div<ActiveMenuProps>`
   max-width: 200px;  
   overflow: hidden;
-  width: 200px;  
+  min-width: 200px;  
   height: 100vh;
   background: ${(props) => props.theme['gray-900']};
   transition: margin 0.5s;
   position: relative;
   
   @media ${breakpoints.medium} {
-    /* position: absolute; */
+    position: absolute;
     margin-left: -200px;
     margin-left: ${(props) => props.active ? '0' : '-200px'};
+    font-size: 0.8rem;
   }
 
   .language-content {
@@ -50,18 +51,18 @@ export const SideMenuContainer = styled.div<ActiveMenuProps>`
     button {
       display: flex;
       align-items: center;
-      background: ${(props) => props.theme['green-500']};
+      background: ${(props) => props.theme['gray-800']};
       width: 100%;
       border-radius: 20px;
       outline: 0;
       cursor: pointer;
-      border: 1px solid ${(props) => props.theme['green-500']};
+      border: 1px solid ${(props) => props.theme['gray-600']};
       padding: 0.2rem 0.5rem 0.2rem 0.2rem;
       transition: all 0.2s;
 
-      &:hover {
-        background: ${(props) => props.theme['green-700']};
-        border: 1px solid ${(props) => props.theme['green-300']};
+      &:hover, &.activeLanguage {
+        background: ${(props) => props.theme['green-900']};
+        border: 1px solid ${(props) => props.theme['green-700']};
       }
 
       img {

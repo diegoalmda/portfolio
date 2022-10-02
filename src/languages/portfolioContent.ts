@@ -1,4 +1,5 @@
 const pt = {
+  selected: "pt",
   menu: {
     selectlanguage: 'Escolha o idioma',
     items: [{ title: "Sobre mim", link: "/about" }, { title: "Conhecimentos", link: "/skills" }, { title: "Projetos", link: "/projects" }, { title: "Contato", link: "/contact" }],
@@ -13,6 +14,7 @@ const pt = {
 }
 
 const en = {
+  selected: "en",
   menu: {
     selectlanguage: 'Choose language',
     items: [{ title: "About", link: "/about" }, { title: "My Skills", link: "/skills" }, { title: "Projects", link: "/projects" }, { title: "Contact", link: "/contact" }],

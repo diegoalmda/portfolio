@@ -1,50 +1,58 @@
 import { HamburgerMenu, SideMenuContainer } from "./styles";
 import { NavLink } from "react-router-dom";
-import { HouseLine, LinkedinLogo, List } from 'phosphor-react'
+import { HouseLine, LinkedinLogo, List, X } from 'phosphor-react'
 import { VscGithub } from 'react-icons/vsc';
 import { useState } from "react";
-import { portfolioContent } from "../../languages/portfolioContent";
 
 import brFlag from "../../assets/brazil-flag.svg"
 import usFlag from "../../assets/usa-flag.svg"
+import { useGlobalLanguage } from "../../contexts/GlobalLanguageContext";
 
 export function SideMenu() {
   const [hamburgerMenuClicked, setHamburgerMenuClicked] = useState(false);
 
-  const { pt, en } = portfolioContent
+  const { selectedLanguage, selectLanguage } = useGlobalLanguage();
 
   function handleHamburgerMenuEvent() {
     setHamburgerMenuClicked(!hamburgerMenuClicked)
+  }
+  
+  function handleHideHamburgerMenu() {
+    setHamburgerMenuClicked(false)
+  }
+
+  function handleSelectLanguage(language: string) {
+    selectLanguage(language)
   }
 
   return (
     <>
       <HamburgerMenu className="hamburger-menu" onClick={handleHamburgerMenuEvent}>
-        <List size={32} />
+        { hamburgerMenuClicked ? <X size={32} /> : <List size={32} /> }        
       </HamburgerMenu>
       <SideMenuContainer active={hamburgerMenuClicked}>
         <div className="language-content">
-          <p>{pt.menu.selectlanguage}</p>
-          <button>
+          <p>{selectedLanguage.menu.selectlanguage}</p>
+          <button onClick={() => handleSelectLanguage("en")} className={`${selectedLanguage.selected === 'en' ? 'activeLanguage' : ''}`}>
             <img src={usFlag} alt=" United States Flag Icon" />
             <span>EN</span>
           </button>
-          <button>
+          <button onClick={() => handleSelectLanguage("pt")} className={`${selectedLanguage.selected === 'pt' ? 'activeLanguage' : ''}`}>
             <img src={brFlag} alt=" United States Flag Icon" />
             <span>PT</span>
           </button>
         </div>
         <div className="logo-content" title="Homepage">
-          <NavLink to="/">
+          <NavLink to="/" onClick={handleHideHamburgerMenu}>
             <HouseLine size={20} />
             <span>Diego Almeida</span>
           </NavLink>
         </div>
         <ul>
-          { pt.menu.items.map(item => {
+          { selectedLanguage.menu.items.map(item => {
             return (
               <li key={item.title}>
-                <NavLink to={item.link} title={item.title}>
+                <NavLink to={item.link} title={item.title} onClick={handleHideHamburgerMenu}>
                   <span>{item.title}</span>
                 </NavLink>
               </li>
