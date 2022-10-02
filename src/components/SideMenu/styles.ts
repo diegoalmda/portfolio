@@ -90,8 +90,9 @@ export const SideMenuContainer = styled.div<ActiveMenuProps>`
     
     a {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      padding-left: 1rem;
       width: 100%;
       height: 3rem;
       color: ${(props) => props.theme['white']};
@@ -126,7 +127,7 @@ export const SideMenuContainer = styled.div<ActiveMenuProps>`
       a {
         height: inherit;
         width: 100%;
-        padding-left: 0.5rem;
+        padding-left: 1rem;
         display: flex;
         justify-content: flex-start;
         align-items: center;

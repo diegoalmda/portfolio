@@ -23,6 +23,7 @@ export function SideMenu() {
 
   function handleSelectLanguage(language: string) {
     selectLanguage(language)
+    // handleHideHamburgerMenu()
   }
 
   return (

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/theme/default";
 
 export const HomeContainer = styled.div`
   height: 100%;  
@@ -6,6 +7,10 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
+  @media ${breakpoints.medium} {
+    font-size: 80%;
+  }
 
   .content {
     margin-bottom: 4rem;
