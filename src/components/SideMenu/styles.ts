@@ -24,11 +24,12 @@ export const SideMenuContainer = styled.div<ActiveMenuProps>`
   height: 100vh;
   background: ${(props) => props.theme['gray-900']};
   transition: margin 0.5s;
+  position: relative;
   
   @media ${breakpoints.medium} {
     /* position: absolute; */
     margin-left: -200px;
-    /* margin-left: ${(props) => props.active ? '-200px' : '0'}; */
+    margin-left: ${(props) => props.active ? '0' : '-200px'};
   }
 
   .language-content {
