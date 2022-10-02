@@ -1,24 +1,8 @@
 import { HomeContainer } from "./styles"
 
-import resume from './PDFFile/resume.pdf'
 import myImage from '../../assets/avatar.jpg'
 
 export function Home() {
-
-  function handleResumeView() {
-    // using Java Script method to get PDF file
-    fetch('./PDFFile/resume.pdf').then(response => {
-        response.blob().then(blob => {
-            // Creating new object of PDF file
-            const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'resume.pdf';
-            alink.click();
-        })
-    })  
-  }
 
   return (
     <HomeContainer>

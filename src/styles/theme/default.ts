@@ -25,3 +25,7 @@ export const defaultTheme = {
 
   'yellow-500': '#FBA94C',
 }
+
+export const breakpoints = {
+  medium: '(max-width: 900px)',
+};

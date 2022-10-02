@@ -14,11 +14,14 @@ export const HomeContainer = styled.div`
       width: 100%;
       display: flex;
       justify-content: center;
+      max-width: 300px;
+      margin: auto;
 
       img {
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
+        object-fit: cover;
       }
     }
 
