@@ -1,11 +1,17 @@
 import { HamburgerMenu, SideMenuContainer } from "./styles";
 import { NavLink } from "react-router-dom";
-import { House, LinkedinLogo, List } from 'phosphor-react'
+import { HouseLine, LinkedinLogo, List } from 'phosphor-react'
 import { VscGithub } from 'react-icons/vsc';
 import { useState } from "react";
+import { portfolioContent } from "../../languages/portfolioContent";
+
+import brFlag from "../../assets/brazil-flag.svg"
+import usFlag from "../../assets/usa-flag.svg"
 
 export function SideMenu() {
   const [hamburgerMenuClicked, setHamburgerMenuClicked] = useState(false);
+
+  const { pt, en } = portfolioContent
 
   function handleHamburgerMenuEvent() {
     setHamburgerMenuClicked(!hamburgerMenuClicked)
@@ -17,33 +23,33 @@ export function SideMenu() {
         <List size={32} />
       </HamburgerMenu>
       <SideMenuContainer active={hamburgerMenuClicked}>
+        <div className="language-content">
+          <p>{pt.menu.selectlanguage}</p>
+          <button>
+            <img src={usFlag} alt=" United States Flag Icon" />
+            <span>EN</span>
+          </button>
+          <button>
+            <img src={brFlag} alt=" United States Flag Icon" />
+            <span>PT</span>
+          </button>
+        </div>
         <div className="logo-content" title="Homepage">
           <NavLink to="/">
-          <div><House size={32} /></div>
-            <h1>Diego Almeida</h1>
+            <HouseLine size={20} />
+            <span>Diego Almeida</span>
           </NavLink>
         </div>
         <ul>
-          <li>
-            <NavLink to="/about" title="">
-              <p>About</p>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/skills" title="">
-              <p>My Skills</p>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects" title="">
-              <p>Projects</p>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" title="">
-              <p>Contact</p>
-            </NavLink>
-          </li>
+          { pt.menu.items.map(item => {
+            return (
+              <li key={item.title}>
+                <NavLink to={item.link} title={item.title}>
+                  <span>{item.title}</span>
+                </NavLink>
+              </li>
+            )
+          })}
         </ul>
         <div className="social">
           <a href="https://www.linkedin.com/in/diegoalmda/" target="_blank">

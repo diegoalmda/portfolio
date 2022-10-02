@@ -18,76 +18,129 @@ interface ActiveMenuProps {
 }
 
 export const SideMenuContainer = styled.div<ActiveMenuProps>`
+  max-width: 200px;  
+  overflow: hidden;
   width: 200px;  
   height: 100vh;
   background: ${(props) => props.theme['gray-900']};
   transition: margin 0.5s;
   
   @media ${breakpoints.medium} {
-    margin-left: ${(props) => props.active ? '-200px' : '0'};
-    position: ${(props) => props.active ? 'absolute' : 'absolute'};
+    /* position: absolute; */
+    margin-left: -200px;
+    /* margin-left: ${(props) => props.active ? '-200px' : '0'}; */
+  }
+
+  .language-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+    gap: 0.5rem;
+
+    p {
+      position: absolute;
+      top: 0.2rem;
+      left: 0.5rem;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      background: ${(props) => props.theme['green-500']};
+      width: 100%;
+      border-radius: 20px;
+      outline: 0;
+      cursor: pointer;
+      border: 1px solid ${(props) => props.theme['green-500']};
+      padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+      transition: all 0.2s;
+
+      &:hover {
+        background: ${(props) => props.theme['green-700']};
+        border: 1px solid ${(props) => props.theme['green-300']};
+      }
+
+      img {
+        width: 25px;
+        height: auto;
+        margin-right: 0.5rem;
+      }
+
+      span {
+        color: ${(props) => props.theme['white']};
+        font-size: 0.8rem;
+      }
+    }
   }
   
   .logo-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    opacity: 0.9;
     
-    width: 150px;
-    height: 150px;
+    width: 100%;
     background: ${(props) => props.theme['green-700']};
-    margin: 1rem;
     /* border-radius: 50%; */
     
     a {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
-    div {
-      background: ${(props) => props.theme['white']};
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: ${(props) => props.theme['gray-800']};
-      margin-bottom: 0.5rem;
+      width: 100%;
+      height: 3rem;
+      color: ${(props) => props.theme['white']};
+            
+      span {
+        font-family: 'Rubik Dirt';
+        font-size: 1rem;
+        margin-left: 0.5rem;
+      }
+
+      /* &.active {
+        background: ${(props) => props.theme['green-500']};
+      } */
+
+      &:hover {
+        background: ${(props) => props.theme['green-500']};
+      }
     }
     
-    h1 {
-      font-family: 'Indie Flower';
-      color: ${(props) => props.theme['white']};
-      font-size: 1.2rem;
-    }
   }
   
   ul {
     li {
       width: 100%;
+      height: 3rem;
       border-bottom: 0.01rem solid ${(props) => props.theme['green-500']};
       background: rgba(0, 135, 95, 0.05);
-      padding: 1rem;
       display: flex;
       align-items: center;
       justify-content: flex-start;
 
       a {
-        transition: transform 0.2s;
-        margin-left: 1rem;
+        height: inherit;
+        width: 100%;
+        padding-left: 0.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.2s;      
+        
+        &.active, &:hover {
+          font-weight: bold;
+          font-size: 1.1rem;
+          border-top: 0.01rem solid ${(props) => props.theme['green-500']};          
+          border-bottom: 0.01rem solid ${(props) => props.theme['green-500']};          
+        }
+
+        &.active {
+          background-color: ${(props) => props.theme['gray-800']};
+        }
       }
-      a:hover {
-        color: white;   
-        transform: scale(1.2); 
-        font-weight: bold;
-      }   
-      /* .active {
-        background-color: ${(props) => props.theme['gray-800']};
-      } */
     }
   }
   .social {
