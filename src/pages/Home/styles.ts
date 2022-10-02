@@ -52,17 +52,19 @@ export const HomeContainer = styled.div`
     }
   }
 
-  button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: ${(props) => props.theme['green-300']};
-    filter: brightness(1);
-    translate: filter 0.2s;
-    cursor: pointer;
-
-    &:hover {
-      filter: brightness(0.9);
+  .resume-section {
+    z-index: -99;
+    button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: ${(props) => props.theme['green-300']};
+      filter: brightness(1);
+      translate: filter 0.2s;
+      cursor: pointer;
+  
+      &:hover {
+        filter: brightness(0.9);
+      }
     }
   }
-
 `;

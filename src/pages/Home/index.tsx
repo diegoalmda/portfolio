@@ -18,7 +18,7 @@ export function Home() {
         <h1>{selectedLanguage.home.beforeName} <span>Diego de Almeida Cunha</span></h1>
         <p>{selectedLanguage.home.description}</p>
       </div>
-      <div>
+      <div className="resume-section">
         <a href={selectedLanguage.home.file} title="Diego Almeida's resumé" target="_blank" rel="noopener noreferrer">
           <button>{selectedLanguage.home.doc}</button>
         </a>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { breakpoints } from "../../styles/theme/default";
 
 export const HamburgerMenu = styled.aside`
+  z-index: 5;
   position: absolute;
   display: none;
   cursor: pointer;
