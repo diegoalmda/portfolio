@@ -26,7 +26,7 @@ export function TechnologyCards() {
         <img src={cssImg} alt="CSS logo" title="CSS" />
       </div>
       <div className="content-card">
-        <img src={reactImg} alt="ReactJS logo" title="ReactJS" />
+        <img src={reactImg} alt="ReactJS logo" title="ReactJS" style={{ filter: 'contrast(70%)' }} />
       </div>
       <div className="content-card">
         <img src={typescriptImg} alt="Typescript logo" title="Typescript" />
