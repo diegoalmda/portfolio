@@ -12,7 +12,7 @@ export function Home() {
     <HomeContainer>
       <div className="content">
         <div className="image-container">
-          <img src={myImage} alt="" title="A picture of Diego Almeida" />
+          <img src={myImage} alt="A picture of Diego Almeida" />
         </div>
         <h2>{selectedLanguage.home.greetings}</h2>
         <h1>{selectedLanguage.home.beforeName} <span>Diego de Almeida Cunha</span></h1>

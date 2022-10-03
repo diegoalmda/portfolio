@@ -23,7 +23,6 @@ export function SideMenu() {
 
   function handleSelectLanguage(language: string) {
     selectLanguage(language)
-    // handleHideHamburgerMenu()
   }
 
   return (
@@ -32,41 +31,43 @@ export function SideMenu() {
         { hamburgerMenuClicked ? <X size={32} /> : <List size={32} /> }        
       </HamburgerMenu>
       <SideMenuContainer active={hamburgerMenuClicked}>
-        <div className="language-content">
-          <p>{selectedLanguage.menu.selectlanguage}</p>
-          <button onClick={() => handleSelectLanguage("en")} className={`${selectedLanguage.selected === 'en' ? 'activeLanguage' : ''}`}>
-            <img src={usFlag} alt=" United States Flag Icon" />
-            <span>EN</span>
-          </button>
-          <button onClick={() => handleSelectLanguage("pt")} className={`${selectedLanguage.selected === 'pt' ? 'activeLanguage' : ''}`}>
-            <img src={brFlag} alt=" United States Flag Icon" />
-            <span>PT</span>
-          </button>
-        </div>
-        <div className="logo-content" title="Homepage">
-          <NavLink to="/" onClick={handleHideHamburgerMenu}>
-            <HouseLine size={20} />
-            <span>Diego Almeida</span>
-          </NavLink>
-        </div>
-        <ul>
-          { selectedLanguage.menu.items.map(item => {
-            return (
-              <li key={item.title}>
-                <NavLink to={item.link} title={item.title} onClick={handleHideHamburgerMenu}>
-                  <span>{item.title}</span>
-                </NavLink>
-              </li>
-            )
-          })}
-        </ul>
-        <div className="social">
-          <a href="https://www.linkedin.com/in/diegoalmda/" target="_blank">
-            <LinkedinLogo size={32} />
-          </a>
-          <a href="https://github.com/diegoalmda" target="_blank">
-            <VscGithub size={28} />
-          </a>
+        <div className="content">
+          <div className="language-content">
+            <p>{selectedLanguage.menu.selectlanguage}</p>
+            <button onClick={() => handleSelectLanguage("en")} className={`${selectedLanguage.selected === 'en' ? 'activeLanguage' : ''}`}>
+              <img src={usFlag} alt=" United States Flag Icon" />
+              <span>EN</span>
+            </button>
+            <button onClick={() => handleSelectLanguage("pt")} className={`${selectedLanguage.selected === 'pt' ? 'activeLanguage' : ''}`}>
+              <img src={brFlag} alt=" United States Flag Icon" />
+              <span>PT</span>
+            </button>
+          </div>
+          <div className="logo-content" title="Homepage">
+            <NavLink to="/" onClick={handleHideHamburgerMenu}>
+              <HouseLine size={20} />
+              <span>Diego Almeida</span>
+            </NavLink>
+          </div>
+          <ul>
+            { selectedLanguage.menu.items.map(item => {
+              return (
+                <li key={item.title}>
+                  <NavLink to={item.link} title={item.title} onClick={handleHideHamburgerMenu}>
+                    <span>{item.title}</span>
+                  </NavLink>
+                </li>
+              )
+            })}
+          </ul>
+          <div className="social">
+            <a href="https://www.linkedin.com/in/diegoalmda/" target="_blank">
+              <LinkedinLogo size={32} />
+            </a>
+            <a href="https://github.com/diegoalmda" target="_blank">
+              <VscGithub size={28} />
+            </a>
+          </div>
         </div>
       </SideMenuContainer>
     </>
