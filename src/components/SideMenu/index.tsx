@@ -4,11 +4,16 @@ import { HouseLine, LinkedinLogo, List, X } from 'phosphor-react'
 import { VscGithub } from 'react-icons/vsc';
 import { useState } from "react";
 
+// import OutsideClick from "../../hooks/OutsideClick";
+
 import brFlag from "../../assets/brazil-flag.svg"
 import usFlag from "../../assets/usa-flag.svg"
 import { useGlobalLanguage } from "../../contexts/GlobalLanguageContext";
 
 export function SideMenu() {
+  // const boxRef = useRef(null);
+  // const boxOutsideClick = OutsideClick(boxRef);
+  
   const [hamburgerMenuClicked, setHamburgerMenuClicked] = useState(false);
 
   const { selectedLanguage, selectLanguage } = useGlobalLanguage();
@@ -24,6 +29,13 @@ export function SideMenu() {
   function handleSelectLanguage(language: string) {
     selectLanguage(language)
   }
+
+  // useEffect(() => {
+  //   if(boxOutsideClick) {
+  //     console.log(boxOutsideClick)
+  //     setHamburgerMenuClicked(false)
+  //   }
+  // }, [boxOutsideClick])
 
   return (
     <>

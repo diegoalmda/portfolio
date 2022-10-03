@@ -18,7 +18,25 @@ interface GlobalLanguageProps {
     description: string,
     doc: string,
     file: string
-  }
+  },
+  about: {
+    title: string,
+    subtitle: string,
+    secondTitle: string,
+    text: string
+  },
+  contact: {
+    title: string,
+    subtitle?: string
+  },
+  projects: {
+    title: string,
+    subtitle?: string
+  },
+  skills: {
+    title: string,
+    subtitle?: string
+  },
 }
 
 interface GlobalLanguageContextType {
