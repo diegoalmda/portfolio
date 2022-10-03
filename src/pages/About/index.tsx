@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { PageTitle } from '../../components/PageTitle';
 import { ProgressBar } from '../../components/ProgressBar';
 import { useGlobalLanguage } from '../../contexts/GlobalLanguageContext';
@@ -18,6 +19,10 @@ export function About() {
           <ProgressBar maxValue={90} barColor="#006064" />
         </div>
         <div>
+          <h3>javascript</h3>
+          <ProgressBar maxValue={90} barColor="#4caf50" />
+        </div>
+        <div>
           <h3>ReactJS</h3>
           <ProgressBar maxValue={80} barColor="#85bb5c" />
         </div>
@@ -29,6 +34,9 @@ export function About() {
           <h3>Node.js</h3>
           <ProgressBar maxValue={55} barColor="#1b5e20" />
         </div>
+        <p>
+          <NavLink to="/skills">{selectedLanguage.about.message}</NavLink>
+        </p>
       </section>
     </AboutContainer>
   )

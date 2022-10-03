@@ -15,7 +15,8 @@ const pt = {
     title: "Sobre mim",
     subtitle: "Um pouco",
     secondTitle: "Principais tecnologias",
-    text: "Sou tecnólogo em Telemática e atuo como desenvolvedor Web desde 2020. Tenho desenvolvido projetos utilizando principalemte a linguagem Javascript tanto front quanto no back-end. Atualmente tenho trabalhado com foco em ReactJS, React Native e Node.js. Estou cada vez mais empolgado com as tecnologias de desenvolvimento para web e dispositivos móveis. Me vejo como desenvolvedor full stack devido às tecnologias com as quais trabalho e procuro manter os estudos sempre em dia para acompanhar as novidades no que diz respeito ao desenvolvimento de software como um todo."
+    message: "Veja mais...",
+    text: "Sou tecnólogo em Telemática e atuo como desenvolvedor Web desde 2020. Tenho desenvolvido projetos utilizando principalmente a linguagem Javascript, tanto front quanto no back-end. Atualmente tenho trabalhado com foco em ReactJS, React Native e Node.js. Estou cada vez mais empolgado com as tecnologias de desenvolvimento para web e dispositivos móveis. Me vejo como desenvolvedor full stack devido às tecnologias com as quais trabalho e procuro manter os estudos sempre em dia para acompanhar as novidades no que diz respeito ao desenvolvimento de software como um todo."
   },
   contact: {
     title: "Contato",
@@ -27,7 +28,9 @@ const pt = {
   },
   skills: {
     title: "Tecnologias",
-    subtitle: "Meu trabalho"
+    subtitle: "Meu trabalho",
+    message: "Logo abaixo estão mais algumas tecnologias que uso para construir meus projetos.",
+    text: "Crio sites responsivos com foco em usabilidade, experiência do usuário e boas práticas. A principal área de minha experiência é desenvolvimento front-end, HTML, CSS, JS, ReactJS e React Native, construindo aplicativos web de pequeno e médio porte, aplicativos móveis, recursos, animações e codificação de layouts interativos. Também tenho experiência de desenvolvedor full-stack com Node.js."
   }
 }
 
@@ -48,6 +51,7 @@ const en = {
     title: "About me",
     subtitle: "Some info",
     secondTitle: "Main technologies",
+    message: "See more...",
     text: "I am a Telematics technologist and a freelance full-stack developer who started the professional career in early 2020. I intend to continue studying and dedicating myself to developing my career in this environment that has always been my true passion. I have been dedicated to studying the JavaScript language and some frameworks related to it, but I do not intend to limit myself to the language. I am willing to dedicate myself to other technologies as soon as possible. I want to keep evolving and learning something new every day."
   },
   contact: {
@@ -60,7 +64,9 @@ const en = {
   },
   skills: {
     title: "My Skills",
-    subtitle: "Check out my"
+    subtitle: "Check out my",
+    message: "Right below are some more technologies I use to build my projects.",
+    text: "I create successful responsive websites with focus on usability, user experience and best practices. The main area of my expertise is front-end development, HTML, CSS, JS, ReactJS and React Native, building small and medium web apps, mobile apps, features, animations, and coding interactive layouts. I also have full-stack developer experience with Node.js."
   },
 }
 

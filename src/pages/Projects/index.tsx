@@ -8,7 +8,7 @@ export function Projects() {
   return (
     <ProjectsContainer>
       <PageTitle mainTitle={selectedLanguage.projects.title} subTitle={selectedLanguage.projects.subtitle!} />
-      {/* <ProgressBar maxValue={50} barColor="#f9f9f9" /> */}
+      <p>You can see more information about me on LINKEDIN and some other project's code on GITHUB.</p>
     </ProjectsContainer>
   )
 }

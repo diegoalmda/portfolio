@@ -23,6 +23,7 @@ interface GlobalLanguageProps {
     title: string,
     subtitle: string,
     secondTitle: string,
+    message: string,
     text: string
   },
   contact: {
@@ -36,6 +37,8 @@ interface GlobalLanguageProps {
   skills: {
     title: string,
     subtitle?: string
+    message: string,
+    text: string
   },
 }
 
