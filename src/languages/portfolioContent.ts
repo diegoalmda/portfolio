@@ -29,7 +29,8 @@ const pt = {
   skills: {
     title: "Tecnologias",
     subtitle: "Meu trabalho",
-    message: "Logo abaixo estão mais algumas tecnologias que uso para construir meus projetos.",
+    message1: "Logo abaixo estão mais algumas tecnologias que uso para construir meus projetos.",
+    message2: "Veja a página de projetos.",
     text: "Crio sites responsivos com foco em usabilidade, experiência do usuário e boas práticas. A principal área de minha experiência é desenvolvimento front-end, HTML, CSS, JS, ReactJS e React Native, construindo aplicativos web de pequeno e médio porte, aplicativos móveis, recursos, animações e codificação de layouts interativos. Também tenho experiência de desenvolvedor full-stack com Node.js."
   }
 }
@@ -65,7 +66,8 @@ const en = {
   skills: {
     title: "My Skills",
     subtitle: "Check out my",
-    message: "Right below are some more technologies I use to build my projects.",
+    message1: "Right below are some more technologies I use to build my projects.",
+    message2: "See my projects's section.",
     text: "I create successful responsive websites with focus on usability, user experience and best practices. The main area of my expertise is front-end development, HTML, CSS, JS, ReactJS and React Native, building small and medium web apps, mobile apps, features, animations, and coding interactive layouts. I also have full-stack developer experience with Node.js."
   },
 }

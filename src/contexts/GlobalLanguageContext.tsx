@@ -37,7 +37,8 @@ interface GlobalLanguageProps {
   skills: {
     title: string,
     subtitle?: string
-    message: string,
+    message1: string,
+    message2: string,
     text: string
   },
 }

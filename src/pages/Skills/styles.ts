@@ -14,5 +14,14 @@ export const SkillsContainer = styled.div`
 
   .message {
     margin-top: 2rem;
+
+    a {
+      color: ${(props) => props.theme['green-300']};
+      transition: color 0.4s;
+
+      &:hover {
+        color: ${(props) => props.theme['green-500']};
+      }
+    }
   }
 `
