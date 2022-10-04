@@ -15,6 +15,7 @@ interface GlobalLanguageProps {
   home: {
     greetings: string,
     beforeName: string,
+    message: string,
     description: string,
     doc: string,
     file: string

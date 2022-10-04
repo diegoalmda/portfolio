@@ -49,6 +49,7 @@ export const HomeContainer = styled.div`
 
     p {
       font-size: 1.2rem;
+      text-align: justify;      
     }
   }
 

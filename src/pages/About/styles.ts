@@ -35,16 +35,7 @@ export const AboutContainer = styled.div`
     p {
       margin-top: 0.5rem;      
       width: fit-content;
-      font-size: 90%;     
-
-      a {
-        color: ${(props) => props.theme['green-300']};
-        transition: color 0.4s;
-
-        &:hover {
-          color: ${(props) => props.theme['green-500']};
-        }
-      }
+      font-size: 90%;
     }
   }
 `

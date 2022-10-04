@@ -19,7 +19,7 @@ interface ProgressBarProps {
 export function ProgressBar({maxValue, barColor}: ProgressBarProps) {
 
   return (
-    <Stack sx={{ width: '100%', color: barColor }} spacing={2} style={{ marginTop: '0.4rem' }}>
+    <Stack sx={{ width: '100%', color: barColor }} spacing={2} style={{ marginTop: '0.4rem', zIndex: '-1' }}>
       <LinearProgressWithLabel color="inherit" variant="determinate" value={maxValue} />
     </Stack>
   )

@@ -8,6 +8,8 @@ export const HamburgerMenu = styled.aside`
   cursor: pointer;
   right: 1rem;
   top: 1rem;
+  padding: 0.5rem 0.5rem 0.2rem;
+  background: ${(props) => props.theme['gray-900']};
 
   @media ${breakpoints.medium} {
     display: block;
@@ -127,6 +129,8 @@ export const SideMenuContainer = styled.div<ActiveMenuProps>`
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
+        border-bottom-left-radius: 20px;
   
         a {
           height: inherit;
@@ -135,7 +139,8 @@ export const SideMenuContainer = styled.div<ActiveMenuProps>`
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          transition: all 0.2s;      
+          transition: all 0.2s;   
+          border-bottom-left-radius: 20px;
           
           &.active, &:hover {
             font-weight: bold;
