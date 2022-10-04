@@ -53,8 +53,7 @@ export const HomeContainer = styled.div`
     }
   }
 
-  .resume-section {
-    z-index: -99;
+  .resume-section { 
     button {
       padding: 10px 20px;
       border-radius: 5px;

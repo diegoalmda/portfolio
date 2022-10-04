@@ -21,7 +21,7 @@ interface ActiveMenuProps {
 }
 
 export const SideMenuContainer = styled.div<ActiveMenuProps>`
-  
+  z-index: 5;
   min-width: 200px;  
   position: relative;
 

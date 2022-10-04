@@ -20,7 +20,7 @@ export function Home() {
         <p>{`${selectedLanguage.home.description} `}<NavLink to="/about">{selectedLanguage.home.message}</NavLink></p>
       </div>
       <div className="resume-section">
-        <a href={selectedLanguage.home.file} title="Diego Almeida's resumé" target="_blank" rel="noopener noreferrer">
+        <a href={selectedLanguage.home.file} title="Diego Almeida's CV" target="_blank" rel="noopener noreferrer">
           <button>{selectedLanguage.home.doc}</button>
         </a>
       </div>
