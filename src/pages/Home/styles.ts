@@ -8,10 +8,6 @@ export const HomeContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  @media ${breakpoints.medium} {
-    font-size: 80%;
-  }
-
   .content {
     margin-bottom: 4rem;
 
@@ -45,11 +41,6 @@ export const HomeContainer = styled.div`
       span {
         color: ${(props) => props.theme['green-300']};
       }
-    }
-
-    p {
-      font-size: 1.2rem;
-      text-align: justify;      
     }
   }
 

@@ -4,16 +4,6 @@ import { breakpoints } from "../../styles/theme/default";
 export const AboutContainer = styled.div`
   color: ${(props) => props.theme['gray-300']};
 
-  @media ${breakpoints.medium} {
-    font-size: 80%;
-  }
-
-  p {
-    text-align: justify;
-    line-height: 1.6;
-    font-size: 120%;
-  }
-
   section {
     margin-top: 3rem;
     h1 {

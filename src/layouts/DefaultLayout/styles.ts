@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../styles/theme/default'
 
 export const LayoutContainer = styled.div`
   display: flex;
@@ -6,6 +7,17 @@ export const LayoutContainer = styled.div`
   main {
     width: 100%;
     padding: 3rem;
+
+    @media ${breakpoints.medium} {
+      font-size: 80%;
+      padding: 1.5rem;
+    } 
+
+    p {
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 120%;      
+    }
 
     a {
       color: ${(props) => props.theme['green-300']};

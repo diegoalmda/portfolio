@@ -28,5 +28,7 @@ export const defaultTheme = {
 }
 
 export const breakpoints = {
+  small: '(max-width: 340px)',
   medium: '(max-width: 900px)',
+  big: '(max-width: 1200px)',
 };
