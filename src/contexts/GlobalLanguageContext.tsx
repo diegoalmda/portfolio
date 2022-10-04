@@ -33,7 +33,18 @@ interface GlobalLanguageProps {
   },
   projects: {
     title: string,
-    subtitle?: string
+    subtitle: string,
+    message1: string,
+    message2: string,
+    list: {
+      name: string,
+      live?: string,
+      repo?: string,
+      message?: string,
+      image: string,
+      technologies: string[],
+      text: string
+    }[]
   },
   skills: {
     title: string,

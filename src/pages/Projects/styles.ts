@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import { breakpoints } from '../../styles/theme/default'
 
 export const ProjectsContainer = styled.div`
+  .main-message {
+    margin-bottom: 1rem;
+  }
 
   .projects-content {
     display: flex;
@@ -12,7 +15,6 @@ export const ProjectsContainer = styled.div`
     .project-item {
       background-color: rgba(0, 0, 0, 0.2);
       border-radius: 10px;
-      /* max-height: 300px; */
       min-height: 200px;
       width: 100%;
       height: 100%;
@@ -29,8 +31,8 @@ export const ProjectsContainer = styled.div`
         padding: 2rem 1rem;
       }
 
-      @media ${breakpoints.big} {
-        margin-bottom: 1rem;
+      @media ${breakpoints.medium} {
+        margin-bottom: 0;
       }
 
       .image-container {
@@ -58,7 +60,6 @@ export const ProjectsContainer = styled.div`
           overflow: hidden;
           width: 100%;
           height: 0;
-          /* height: 100%; */
           transition: .5s ease;
 
           display: flex;
@@ -90,8 +91,11 @@ export const ProjectsContainer = styled.div`
                 filter: brightness(0.9);
               }            
             }
-          }
 
+            .soon-message {
+              color: ${(props) => props.theme['green-300']};
+            }
+          }
         }
       }
 
@@ -121,6 +125,14 @@ export const ProjectsContainer = styled.div`
           
           @media ${breakpoints.medium} {
             padding: 0;
+          }
+
+          .text-content {
+            .technologies {
+              margin: 0.5rem 0 1.2rem;
+              font-weight: 500;
+              color: ${(props) => props.theme['green-300']};
+            }
           }
         }
       }
