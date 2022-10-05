@@ -23,7 +23,7 @@ export function Projects() {
             return (
               <div className="project-item" key={project.name}>
                 <div className="image-container">
-                  <img src={projectImage} alt="" />
+                  <img src={`${import.meta.env.VITE_PUBLIC_URL}/${project.image}`} alt="" />
                   <div className="access-buttons">
                     <h4>{project.name}</h4>
                     <div className="buttons">
