@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import { PageTitle } from '../../components/PageTitle';
 import { ProgressBar } from '../../components/ProgressBar';
-import { useGlobalLanguage } from '../../contexts/GlobalLanguageContext';
+import { useGlobalContext } from '../../contexts/GlobalApplicationContext';
 import { AboutContainer } from './styles';
 
 export function About() {
-  const { selectedLanguage } = useGlobalLanguage();
+  const { selectedLanguage } = useGlobalContext();
 
   return (
     <AboutContainer>

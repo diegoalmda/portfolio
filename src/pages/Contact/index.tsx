@@ -1,12 +1,12 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { PageTitle } from "../../components/PageTitle";
-import { useGlobalLanguage } from "../../contexts/GlobalLanguageContext";
 import { ContactContainer } from "./styles";
 import swal from 'sweetalert';
 import { FormEvent, useRef, useState } from "react";
+import { useGlobalContext } from "../../contexts/GlobalApplicationContext";
 
 export function Contact() {
-  const { selectedLanguage } = useGlobalLanguage();
+  const { selectedLanguage } = useGlobalContext();
 
   const nameRef = useRef(null)
 

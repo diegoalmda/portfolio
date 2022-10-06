@@ -1,11 +1,11 @@
 import { PageTitle } from "../../components/PageTitle";
-import { useGlobalLanguage } from "../../contexts/GlobalLanguageContext";
 import { SkillsContainer } from "./styles";
 import { TechnologyCards } from "../../components/TechnologyCards";
 import { NavLink } from "react-router-dom";
+import { useGlobalContext } from "../../contexts/GlobalApplicationContext";
 
 export function Skills() {
-  const { selectedLanguage } = useGlobalLanguage();
+  const { selectedLanguage } = useGlobalContext();
 
   return (
     <SkillsContainer>

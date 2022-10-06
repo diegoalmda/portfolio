@@ -21,6 +21,10 @@ export const ProjectsContainer = styled.div`
       display: flex;
       padding: 2rem;
 
+      &:last-child {
+        margin-bottom: 2rem;
+      }
+
       &:hover .image-container .access-buttons {
         height: 100%;
       }      

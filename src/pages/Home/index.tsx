@@ -1,13 +1,12 @@
 import { HomeContainer } from "./styles"
 
 import myImage from '../../assets/avatar.jpg'
-import { portfolioContent } from "../../languages/portfolioContent"
-import { useGlobalLanguage } from "../../contexts/GlobalLanguageContext"
 import { NavLink } from "react-router-dom";
+import { useGlobalContext } from "../../contexts/GlobalApplicationContext";
 
 export function Home() {
 
-  const { selectedLanguage } = useGlobalLanguage();
+  const { selectedLanguage } = useGlobalContext();
 
   return (
     <HomeContainer>

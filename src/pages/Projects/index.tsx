@@ -1,10 +1,10 @@
 import { PageTitle } from "../../components/PageTitle";
-import { useGlobalLanguage } from "../../contexts/GlobalLanguageContext";
 import { ProjectsContainer } from "./styles";
 import { ArrowElbowRightDown } from "phosphor-react";
+import { useGlobalContext } from "../../contexts/GlobalApplicationContext";
 
 export function Projects() {
-  const { selectedLanguage } = useGlobalLanguage();
+  const { selectedLanguage } = useGlobalContext();
 
   return (
     <ProjectsContainer>

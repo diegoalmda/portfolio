@@ -6,7 +6,7 @@ import {
 } from 'react'
 import { portfolioContent } from '../languages/portfolioContent';
 
-interface GlobalLanguageProps {
+interface GlobalApplicationProps {
   selected: string
   menu: {
     selectlanguage: string
@@ -64,23 +64,26 @@ interface GlobalLanguageProps {
   },
 }
 
-interface GlobalLanguageContextType {
-  selectedLanguage: GlobalLanguageProps
+interface GlobalApplicationContextType {
+  selectedLanguage: GlobalApplicationProps
   selectLanguage: (language: string) => void
+  changeShowSideMenu: boolean
+  changeSideMenuState: () => void
 }
 
-const GlobalLanguageContext = createContext({} as GlobalLanguageContextType);
+const GlobalLanguageContext = createContext({} as GlobalApplicationContextType);
 
-interface GlobalLanguageContextProviderProps {
+interface GlobalApplicationContextProviderProps {
   children: ReactNode
 }
 
-function GlobalLanguageContextProvider({
+function GlobalApplicationContextProvider({
   children,
-}: GlobalLanguageContextProviderProps) {
+}: GlobalApplicationContextProviderProps) {
   const { en, pt } = portfolioContent;
   
-  const [selectedLanguage, setSelectedLanguage] = useState<GlobalLanguageProps>(en);
+  const [selectedLanguage, setSelectedLanguage] = useState<GlobalApplicationProps>(en);
+  const [changeShowSideMenu, setChangeShowSideMenu] = useState(false);
 
   function selectLanguage(language: string) {
     if(language === 'en') {
@@ -90,11 +93,17 @@ function GlobalLanguageContextProvider({
     }
   }
 
+  function changeSideMenuState() {
+    setChangeShowSideMenu(!changeShowSideMenu)
+  }
+
   return (
     <GlobalLanguageContext.Provider
       value={{
         selectedLanguage,
-        selectLanguage
+        selectLanguage,
+        changeShowSideMenu,
+        changeSideMenuState
       }}
     >
       {children}
@@ -102,10 +111,10 @@ function GlobalLanguageContextProvider({
   )
 }
 
-function useGlobalLanguage() {
+function useGlobalContext() {
   const context = useContext(GlobalLanguageContext);
 
   return context;
 }
 
-export { GlobalLanguageContextProvider, useGlobalLanguage};
+export { GlobalApplicationContextProvider, useGlobalContext};

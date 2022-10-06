@@ -2,21 +2,17 @@ import { HamburgerMenu, SideMenuContainer } from "./styles";
 import { NavLink } from "react-router-dom";
 import { HouseLine, LinkedinLogo, List, X } from 'phosphor-react'
 import { VscGithub } from 'react-icons/vsc';
-import { useState } from "react";
-
-// import OutsideClick from "../../hooks/OutsideClick";
+import { useEffect, useState } from "react";
 
 import brFlag from "../../assets/brazil-flag.svg"
 import usFlag from "../../assets/usa-flag.svg"
-import { useGlobalLanguage } from "../../contexts/GlobalLanguageContext";
+import { useGlobalContext } from "../../contexts/GlobalApplicationContext";
 
 export function SideMenu() {
-  // const boxRef = useRef(null);
-  // const boxOutsideClick = OutsideClick(boxRef);
   
   const [hamburgerMenuClicked, setHamburgerMenuClicked] = useState(false);
 
-  const { selectedLanguage, selectLanguage } = useGlobalLanguage();
+  const { selectedLanguage, selectLanguage, changeShowSideMenu } = useGlobalContext();
 
   function handleHamburgerMenuEvent() {
     setHamburgerMenuClicked(!hamburgerMenuClicked)
@@ -30,12 +26,9 @@ export function SideMenu() {
     selectLanguage(language)
   }
 
-  // useEffect(() => {
-  //   if(boxOutsideClick) {
-  //     console.log(boxOutsideClick)
-  //     setHamburgerMenuClicked(false)
-  //   }
-  // }, [boxOutsideClick])
+  useEffect(() => {
+    setHamburgerMenuClicked(false)
+  }, [changeShowSideMenu])
 
   return (
     <>
