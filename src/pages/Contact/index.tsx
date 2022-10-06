@@ -8,7 +8,24 @@ export function Contact() {
   return (
     <ContactContainer>
       <PageTitle mainTitle={selectedLanguage.contact.title} subTitle={selectedLanguage.contact.subtitle!} />
-      {/* <ProgressBar maxValue={50} barColor="#f9f9f9" /> */}
+      <p>{selectedLanguage.contact.message}</p>
+      <form className="form-container">
+        <div className="form-element">
+          <input type="text" placeholder={`${selectedLanguage.contact.form.name} *`} required aria-required />
+        </div>
+        <div className="form-element">
+          <input type="email" placeholder="E-mail *" required aria-required />
+        </div>
+        <div className="full-width">
+          <input type="text" placeholder={`${selectedLanguage.contact.form.subject}`} />
+        </div>
+        <div className="full-width">
+          <textarea name="" id="" placeholder={`${selectedLanguage.contact.form.message} *`} required aria-required />
+        </div>
+        <div className="full-width">
+          <button>{selectedLanguage.contact.form.button}</button>
+        </div>
+      </form>
     </ContactContainer>
   )
 }

@@ -68,6 +68,14 @@ export const ProjectsContainer = styled.div`
           align-items: center;
           gap: 1.2rem;
 
+          @media ${breakpoints.medium} {
+            height: 40%;
+          }
+          
+          @media ${breakpoints.small} {
+            height: 60%;
+          }
+
           h4 {
             color: ${(props) => props.theme['white']};
           }

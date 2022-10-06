@@ -37,6 +37,8 @@ export const SideMenuContainer = styled.div<ActiveMenuProps>`
     height: 100vh;
     background: ${(props) => props.theme['gray-900']};
     transition: margin 0.5s;
+
+    border-radius: 0 20px 20px 0;
     
     @media ${breakpoints.medium} {      
       margin-left: -200px;

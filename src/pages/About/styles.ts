@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { breakpoints } from "../../styles/theme/default";
 
 export const AboutContainer = styled.div`
   color: ${(props) => props.theme['gray-300']};

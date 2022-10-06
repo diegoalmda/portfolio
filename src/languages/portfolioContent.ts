@@ -21,7 +21,14 @@ const pt = {
   },
   contact: {
     title: "Contato",
-    subtitle: "Entre em"
+    subtitle: "Entre em",
+    message: "Resido na cidade de Curitiba e estou aberto a propostas de trabalho em período integral. Entre em contato.",
+    form: {
+      name: "Nome",
+      subject: "Assunto",
+      message: "Mensagem",
+      button: "Enviar"
+    }
   },
   projects: {
     title: "Projetos",
@@ -53,7 +60,7 @@ const pt = {
         repo: "",
         message: "Coming soon!",
         image: "projects/travelagency.png",
-        technologies: ["HTML", "CSS", "ReactJS", "React Router Dom", "Context API", "Styled components", "Phosphor icons", "Date-fns", "Node.js", "Express Framework"],
+        technologies: ["HTML", "CSS", "ReactJS", "React Router Dom", "Context API", "Styled components", "Phosphor icons", "Date-fns", "Node.js", "Express Framework", "JWT"],
         text: "É um projeto Full Stack para uma agência de viagens. São 2 front-ends React que se comunicam com uma API criada em Node.js, para cadastrar promoções, grupos de viagens, usuários do sistema, entre outros. Um front será a página principal da agência, onde os clientes irão acessar e verificar promoções e grupos disponíveis de viagem, a partir de informações trazidas via requisições REST à API. O outro front, se trata de um portal administrativo, onde será feito o controle de todo o conteúdo não-estático que irá aparecer no site."
       },
     ]
@@ -90,7 +97,14 @@ const en = {
   },
   contact: {
     title: "Contact",
-    subtitle: "E-mail me"
+    subtitle: "E-mail me",
+    message: "I'm a Brazilian developer who lives in the state of Paraná. I am open to full-time positions. Contact me.",
+    form: {
+      name: "Name",
+      subject: "Subject",
+      message: "Message",
+      button: "Send"
+    }
   },
   projects: {
     title: "Projects",
@@ -122,7 +136,7 @@ const en = {
         repo: "",
         message: "Coming soon!",
         image: "projects/travelagency.png",
-        technologies: ["HTML", "CSS", "ReactJS", "React Router Dom", "Context API", "Styled components", "Phosphor icons", "Date-fns", "Node.js", "Express Framework"],
+        technologies: ["HTML", "CSS", "ReactJS", "React Router Dom", "Context API", "Styled components", "Phosphor icons", "Date-fns", "Node.js", "Express Framework", "JWT"],
         text: "It's a Full Stack project for a travel agency. There are 2 React front-ends that communicate with an API created in Node.js, to register promotions, travel groups, system users, among other functionalities. One front will be the agency's main page, where customers will be able to access and check available promotions and travel groups, based on information brought by REST requests to the API. The other front is an administrative portal, where all non-static content will be controlled."
       },
     ]

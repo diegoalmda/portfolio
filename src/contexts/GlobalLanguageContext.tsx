@@ -29,7 +29,14 @@ interface GlobalLanguageProps {
   },
   contact: {
     title: string,
-    subtitle?: string
+    subtitle?: string,
+    message: string,
+    form: {
+      name: string,
+      subject: string,
+      message: string,
+      button: string
+    }
   },
   projects: {
     title: string,

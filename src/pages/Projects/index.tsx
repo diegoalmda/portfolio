@@ -1,8 +1,6 @@
 import { PageTitle } from "../../components/PageTitle";
 import { useGlobalLanguage } from "../../contexts/GlobalLanguageContext";
 import { ProjectsContainer } from "./styles";
-
-import projectImage from  "../../assets/projects/project1.png"
 import { ArrowElbowRightDown } from "phosphor-react";
 
 export function Projects() {
@@ -29,7 +27,7 @@ export function Projects() {
                     <div className="buttons">
                       {
                         project.live && <a href={`${project.live}`} target="_blank">
-                          <button>Live</button>
+                          <button>{`${selectedLanguage.selected === "en" ? "Live": "Abrir"}`}</button>
                         </a>
                       }
                       {
@@ -45,7 +43,7 @@ export function Projects() {
                   </div>
                 </div>
                 <div className="text-container">
-                  <div className="scroll-signal"><span>Scroll</span><ArrowElbowRightDown size={20} /></div>
+                  <div className="scroll-signal"><span>{`${selectedLanguage.selected === "en" ? "Scroll": "Rolagem"}`}</span><ArrowElbowRightDown size={20} /></div>
                   <div className="project-info">
                     <div className="text-content">
                       <h2>{project.name}</h2>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { breakpoints } from "../../styles/theme/default";
 
 export const HomeContainer = styled.div`
   height: 100%;  
