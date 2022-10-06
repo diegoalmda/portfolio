@@ -75,10 +75,10 @@ export function SideMenu() {
             })}
           </ul>
           <div className="social">
-            <a href="https://www.linkedin.com/in/diegoalmda/" target="_blank">
+            <a href="https://www.linkedin.com/in/diegoalmda/" target="_blank" aria-label="Go to Diego Almeida's linkedin profile">
               <LinkedinLogo size={32} />
             </a>
-            <a href="https://github.com/diegoalmda" target="_blank">
+            <a href="https://github.com/diegoalmda" target="_blank" aria-label="Go to Diego Almeida's github profile">
               <VscGithub size={28} />
             </a>
           </div>

@@ -11,9 +11,9 @@ export function Projects() {
       <PageTitle mainTitle={selectedLanguage.projects.title} subTitle={selectedLanguage.projects.subtitle!} />      
       <p className="main-message">
         {selectedLanguage.projects.message1}
-        <a href="https://www.linkedin.com/in/diegoalmda/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/diegoalmda/" target="_blank" aria-label="Go to Diego Almeida's linkedin profile">LinkedIn</a>
         {selectedLanguage.projects.message2}
-        <a href="https://github.com/diegoalmda" target="_blank">GitHub</a>.
+        <a href="https://github.com/diegoalmda" target="_blank" aria-label="Go to Diego Almeida's github profile">GitHub</a>.
       </p>
       <div className="projects-content">        
         {
@@ -26,12 +26,12 @@ export function Projects() {
                     <h4>{project.name}</h4>
                     <div className="buttons">
                       {
-                        project.live && <a href={`${project.live}`} target="_blank">
+                        project.live && <a href={`${project.live}`} target="_blank" aria-label="Go to project live page">
                           <button>{`${selectedLanguage.selected === "en" ? "Live": "Abrir"}`}</button>
                         </a>
                       }
                       {
-                        project.repo && <a href={`${project.repo}`} target="_blank">
+                        project.repo && <a href={`${project.repo}`} target="_blank" aria-label="Go to repository page on github">
                           <button>Repo</button>
                         </a>
                       }
