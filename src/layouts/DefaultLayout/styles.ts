@@ -3,8 +3,9 @@ import { breakpoints } from '../../styles/theme/default'
 
 export const LayoutContainer = styled.div`
   display: flex;
-
+  
   main {
+    max-width: 1600px;
     width: 100%;
     padding: 3rem;
 
