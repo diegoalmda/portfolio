@@ -5,7 +5,6 @@ export const ProjectsContainer = styled.div`
   .main-message {
     margin-bottom: 1rem;
   }
-
   .projects-content {
     display: flex;
     flex-direction: column;
@@ -20,11 +19,7 @@ export const ProjectsContainer = styled.div`
       height: 100%;
       display: flex;
       padding: 2rem;
-
-      &:last-child {
-        margin-bottom: 2rem;
-      }
-
+      
       &:hover .image-container .access-buttons {
         height: 100%;
       }      
@@ -34,27 +29,22 @@ export const ProjectsContainer = styled.div`
         align-items: center;
         padding: 2rem 1rem;
       }
-
       @media ${breakpoints.medium} {
         margin-bottom: 0;
       }
-
       .image-container {
         position: relative;
         flex: 1;
         max-width: 400px;
-
         @media ${breakpoints.big} {
           margin-bottom: 2rem;
         }
-
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
           object-position: left;
         }
-
         .access-buttons {
           position: absolute;
           bottom: 0;
@@ -65,13 +55,11 @@ export const ProjectsContainer = styled.div`
           width: 100%;
           height: 0;
           transition: .5s ease;
-
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           gap: 1.2rem;
-
           @media ${breakpoints.medium} {
             height: 40%;
           }
@@ -79,15 +67,12 @@ export const ProjectsContainer = styled.div`
           @media ${breakpoints.small} {
             height: 60%;
           }
-
           h4 {
             color: ${(props) => props.theme['white']};
           }
-
           .buttons {
             display: flex;
             gap: 1.2rem;
-
             button {
               padding: 10px 20px;
               border-radius: 5px;
@@ -103,25 +88,21 @@ export const ProjectsContainer = styled.div`
                 filter: brightness(0.9);
               }            
             }
-
             .soon-message {
               color: ${(props) => props.theme['green-300']};
             }
           }
         }
       }
-
       .text-container {
         flex: 1;
         position: relative;
         width: 100%;
-
         .scroll-signal {
           width: 100%;
           text-align: right;
           color: ${(props) => props.theme['green-300']};
           position: absolute;
-
           top: -1.5rem;
         }
         
@@ -138,7 +119,6 @@ export const ProjectsContainer = styled.div`
           @media ${breakpoints.medium} {
             padding: 0;
           }
-
           .text-content {
             .technologies {
               margin: 0.5rem 0 1.2rem;

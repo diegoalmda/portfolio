@@ -5,6 +5,7 @@ export const AboutContainer = styled.div`
 
   section {
     margin-top: 3rem;
+
     h1 {
       font-weight: 600;
       margin-bottom: 2rem;

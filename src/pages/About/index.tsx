@@ -35,7 +35,7 @@ export function About() {
           <ProgressBar maxValue={55} barColor="#1b5e20" />
         </div>
         <p>
-          <NavLink to="/skills">{selectedLanguage.about.message}</NavLink>
+          <NavLink to="/skills" aria-label="Read more about me on my skills section">{selectedLanguage.about.message}</NavLink>
         </p>
       </section>
     </AboutContainer>

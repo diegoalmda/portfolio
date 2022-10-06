@@ -80,7 +80,7 @@ export const SideMenuContainer = styled.div<ActiveMenuProps>`
   
         img {
           width: 25px;
-          height: auto;
+          height: 25px;
           margin-right: 0.5rem;
         }
   

@@ -6,7 +6,7 @@ export const LayoutContainer = styled.div`
   
   main {
     max-width: 1600px;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 3rem;
 

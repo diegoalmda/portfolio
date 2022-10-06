@@ -49,7 +49,11 @@ export function SideMenu() {
             </button>
           </div>
           <div className="logo-content" title="Homepage">
-            <NavLink to="/" onClick={handleHideHamburgerMenu}>
+            <NavLink 
+              to="/" 
+              onClick={handleHideHamburgerMenu}
+              aria-label="Go to homepage"
+            >
               <HouseLine size={20} />
               <span>Diego Almeida</span>
             </NavLink>
@@ -58,7 +62,12 @@ export function SideMenu() {
             { selectedLanguage.menu.items.map(item => {
               return (
                 <li key={item.title}>
-                  <NavLink to={item.link} title={item.title} onClick={handleHideHamburgerMenu}>
+                  <NavLink 
+                    to={item.link} 
+                    title={item.title} 
+                    onClick={handleHideHamburgerMenu}
+                    aria-label={`Got to ${item.title}`}
+                  >
                     <span>{item.title}</span>
                   </NavLink>
                 </li>
