@@ -41,6 +41,20 @@ export const ContactContainer = styled.div`
       }
     }
 
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+      -webkit-box-shadow: 0 0 0 30px ${(props) => props.theme['gray-700']} inset !important;
+    }
+    input:-webkit-autofill{
+        -webkit-text-fill-color: ${(props) => props.theme['gray-400']} !important;
+    }
+
+    .error {
+      border-bottom: 2px solid ${(props) => props.theme['red-300']};
+    }
+
     .full-width {
       grid-column: 1 / 3;
       width: 100%;

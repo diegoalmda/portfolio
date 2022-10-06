@@ -27,7 +27,9 @@ const pt = {
       name: "Nome",
       subject: "Assunto",
       message: "Mensagem",
-      button: "Enviar"
+      button: "Enviar",
+      success: "Mensagem enviada!", 
+      successMessage: "Em breve retornarei o contato!"
     }
   },
   projects: {
@@ -103,7 +105,9 @@ const en = {
       name: "Name",
       subject: "Subject",
       message: "Message",
-      button: "Send"
+      button: "Send",
+      success: "Your message has been sent!", 
+      successMessage: "I'll get back to you soon!"
     }
   },
   projects: {

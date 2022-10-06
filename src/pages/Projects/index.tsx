@@ -55,7 +55,7 @@ export function Projects() {
                               signal = "."
                             }
                             return (
-                              <span>{technology}{signal} </span>
+                              <span key={technology}>{technology}{signal} </span>
                             )
                           })
                         }

@@ -35,7 +35,9 @@ interface GlobalLanguageProps {
       name: string,
       subject: string,
       message: string,
-      button: string
+      button: string,
+      success: string, 
+      successMessage: string
     }
   },
   projects: {
