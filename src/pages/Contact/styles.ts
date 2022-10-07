@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { breakpoints } from '../../styles/theme/default'
 
-export const ContactContainer = styled.div`
+export const ContactContainer = styled.section`
 
   max-width: 1050px;
 

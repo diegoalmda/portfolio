@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { breakpoints } from "../../styles/theme/default";
 
-export const TitleContainer = styled.div`
+export const TitleContainer = styled.header`
   margin-bottom: 2rem;
 
   h1 {

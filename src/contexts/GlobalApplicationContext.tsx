@@ -2,6 +2,7 @@ import {
   createContext,
   ReactNode,
   useContext,
+  useEffect,
   useState,
 } from 'react'
 import { portfolioContent } from '../languages/portfolioContent';
@@ -88,14 +89,26 @@ function GlobalApplicationContextProvider({
   function selectLanguage(language: string) {
     if(language === 'en') {
       setSelectedLanguage(en)
+      localStorage.setItem('@portfolio:language-selected', language)
     } else {
       setSelectedLanguage(pt)
+      localStorage.setItem('@portfolio:language-selected', language)
     }
   }
 
   function changeSideMenuState() {
     setChangeShowSideMenu(!changeShowSideMenu)
   }
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem('@portfolio:language-selected')
+
+    if(!storedLanguage) {
+      setSelectedLanguage(en)
+    } else {
+      setSelectedLanguage(storedLanguage === 'en' ? en : pt)
+    }
+  }, [selectedLanguage])
 
   return (
     <GlobalLanguageContext.Provider

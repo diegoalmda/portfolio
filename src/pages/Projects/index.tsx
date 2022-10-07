@@ -2,9 +2,22 @@ import { PageTitle } from "../../components/PageTitle";
 import { ProjectsContainer } from "./styles";
 import { ArrowElbowRightDown } from "phosphor-react";
 import { useGlobalContext } from "../../contexts/GlobalApplicationContext";
+import { useEffect } from "react";
 
 export function Projects() {
   const { selectedLanguage } = useGlobalContext();
+
+  useEffect(() => {
+    const items = document.querySelectorAll('.project-info')
+
+    items.forEach(item => {
+      const itemPosition = item.getBoundingClientRect()
+      if(itemPosition.height < 300) {
+        const scrollDiv = item.parentNode?.firstChild
+        scrollDiv?.firstChild?.remove()
+      }
+    })
+  }, [])
 
   return (
     <ProjectsContainer>
@@ -43,7 +56,7 @@ export function Projects() {
                   </div>
                 </div>
                 <div className="text-container">
-                  <div className="scroll-signal"><span>{`${selectedLanguage.selected === "en" ? "Scroll": "Rolagem"}`}</span><ArrowElbowRightDown size={20} /></div>
+                  <div className="scroll-signal"><span className="scrolling-tag">{`${selectedLanguage.selected === "en" ? "Scroll": "Rolagem"}`}</span><ArrowElbowRightDown size={20} /></div>
                   <div className="project-info">
                     <div className="text-content">
                       <h2>{project.name}</h2>

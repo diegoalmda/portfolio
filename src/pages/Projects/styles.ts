@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { breakpoints } from '../../styles/theme/default'
 
-export const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled.section`
   .main-message {
     margin-bottom: 1rem;
   }

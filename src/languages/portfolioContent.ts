@@ -122,7 +122,7 @@ const en = {
         repo: "https://github.com/diegoalmda/ignite-timer",
         message: "",
         image: "projects/timer.png",
-        technologies: ["HTML", "CSS", "Next.js", "ReactJS", "Tailwind CSS", "GraphQL", "React Router Dom", "Context API", "useReducer", "Styled components", "Phosphor icons", "Immer JS", "ESLint", "Date-fns", "Zod"],
+        technologies: ["HTML", "CSS", "Vite", "TypeScript", "ReactJS", "React Router Dom", "Context API", "useReducer", "Styled components", "Phosphor icons", "Immer JS", "ESLint", "Date-fns", "Zod"],
         text: "The Timer project was conceived to follow the time management technique called Pomodoro. This technique aims to increase productivity when performing a certain task, using a timer and making small intervals between each completion of the time count until completing the tasks scheduled to be completed in each timer."
       },
       {

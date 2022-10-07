@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
+export const AboutContainer = styled.section`
   color: ${(props) => props.theme['gray-300']};
 
   section {
