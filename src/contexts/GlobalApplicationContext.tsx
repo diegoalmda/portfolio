@@ -101,10 +101,11 @@ function GlobalApplicationContextProvider({
   }
 
   useEffect(() => {
+    const [getLanguageFromNavigator, ] = (navigator.language).split("-")
     const storedLanguage = localStorage.getItem('@portfolio:language-selected')
 
     if(!storedLanguage) {
-      setSelectedLanguage(en)
+      setSelectedLanguage(getLanguageFromNavigator === 'pt' ? pt : en)
     } else {
       setSelectedLanguage(storedLanguage === 'en' ? en : pt)
     }
