@@ -79,7 +79,8 @@ export const ContactContainer = styled.div`
         filter: brightness(1);
         translate: filter 0.2s;
         cursor: pointer;
-        font-weight: bold;
+        font-weight: 400;
+        font-size: 120%;
     
         &:hover {
           filter: brightness(0.9);

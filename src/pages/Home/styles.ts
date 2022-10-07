@@ -54,6 +54,7 @@ export const HomeContainer = styled.div`
   
       &:hover {
         filter: brightness(0.9);
+        color: ${(props) => props.theme['white']};
       }
     }
   }
