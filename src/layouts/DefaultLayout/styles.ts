@@ -9,6 +9,7 @@ export const LayoutContainer = styled.div`
     min-height: 100vh;
     width: 100%;
     padding: 3rem;
+    margin: auto;
 
     @media ${breakpoints.medium} {
       font-size: 80%;
