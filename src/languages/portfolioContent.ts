@@ -60,7 +60,7 @@ const pt = {
         name: "Agência de Viagens",
         live: "",
         repo: "",
-        message: "Coming soon!",
+        message: "Em breve!",
         image: "projects/travelagency.png",
         technologies: ["HTML", "CSS", "ReactJS", "React Router Dom", "Context API", "Styled components", "Phosphor icons", "Date-fns", "Node.js", "Express Framework", "JWT"],
         text: "É um projeto Full Stack para uma agência de viagens. São 2 front-ends React que se comunicam com uma API criada em Node.js, para cadastrar promoções, grupos de viagens, usuários do sistema, entre outros. Um front será a página principal da agência, onde os clientes irão acessar e verificar promoções e grupos disponíveis de viagem, a partir de informações trazidas via requisições REST à API. O outro front, se trata de um portal administrativo, onde será feito o controle de todo o conteúdo não-estático que irá aparecer no site."
