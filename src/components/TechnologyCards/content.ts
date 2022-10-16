@@ -69,4 +69,9 @@ export const mySkills = [
     alt: "PostgreSQL logo",
     title: "PostgreSQL"
   },
+  {
+    image: "skills/jest.svg",
+    alt: "Jest logo",
+    title: "Jest"
+  },
 ]
