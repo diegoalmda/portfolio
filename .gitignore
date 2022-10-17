@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+coverage
 dist
 dist-ssr
 *.local
@@ -17,7 +18,6 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
-.github
 *.suo
 *.ntvs*
 *.njsproj
@@ -28,3 +28,4 @@ dist-ssr
 .github/workflows
 
 .env
+jest.*
