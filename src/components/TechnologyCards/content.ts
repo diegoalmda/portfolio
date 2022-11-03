@@ -12,7 +12,7 @@ export const mySkills = [
   {
     image: "skills/react.svg",
     alt: "ReactJS logo",
-    title: "ReactJS"
+    title: "ReactJS / React Native"
   },
   {
     image: "skills/typescript.svg",
