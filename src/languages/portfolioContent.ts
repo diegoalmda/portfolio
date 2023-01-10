@@ -39,6 +39,15 @@ const pt = {
     message2: " e o repositório de outros projetos no ",
     list: [
       {
+        name: "Ignite Call",
+        live: "https://nextjs-ignite-call.vercel.app/",
+        repo: "https://github.com/diegoalmda/nextjs-ignite-call",
+        message: "",
+        image: "projects/ignitecall.png",
+        technologies: ["Next.js", "TypeScript", "ReactJS", "Node.js", "Prisma.io", "Google APIs", "Google Cloud Platform", "Phosphor icons", "Docker", "ESLint", "Date-fns", "Zod", "Axios", "Stitches (CSS-in-JS)", "Next Auth", "NExt Seo", "Nookies", "React Hook Form", "Design System"],
+        text: "O projeto Ignite Call é um projeto Full Stack que construído para agendamentos de compromissos a partir de um calendário com integração com o Google Agenda. O usuário pode se cadastrar no app a partir de sua conta do Google e indicar seus dias da semana e horários em que estará disponível para agendar compromissos. Todo agendamento cadastrado na aplicação tem integração com o Google Agenda, o que possibilita ao usuário verificar seus novos compromissos direto na plataforma do Google."
+      },
+      {
         name: "Timer",
         live: "https://ignite-timer-sepia.vercel.app/",
         repo: "https://github.com/diegoalmda/ignite-timer",
@@ -116,6 +125,15 @@ const en = {
     message1: "You can see more information about me on ",
     message2: " and some other project's code on ",
     list: [
+      {
+        name: "Ignite Call",
+        live: "https://nextjs-ignite-call.vercel.app/",
+        repo: "https://github.com/diegoalmda/nextjs-ignite-call",
+        message: "",
+        image: "projects/ignitecall.png",
+        technologies: ["Next.js", "TypeScript", "ReactJS", "Node.js", "Prisma.io", "Google APIs", "Google Cloud Platform", "Phosphor icons", "Docker", "ESLint", "Date-fns", "Zod", "Axios", "Stitches (CSS-in-JS)", "Next Auth", "NExt Seo", "Nookies", "React Hook Form", "Design System"],
+        text: "The Ignite Call project is a Full Stack project that was built for scheduling appointments from a calendar with Google Calendar integration. Users can register for the app using their Google account and indicate their days of the week and times when they will be available to schedule appointments. Every schedule registered in the application has integration with Google Calendar, which allows the user to check their new appointments directly on the Google platform."
+      },
       {
         name: "Timer",
         live: "https://ignite-timer-sepia.vercel.app/",

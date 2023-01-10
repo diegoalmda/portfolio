@@ -74,4 +74,9 @@ export const mySkills = [
     alt: "Jest logo",
     title: "Jest"
   },
+  {
+    image: "skills/docker.svg",
+    alt: "Docker logo",
+    title: "Docker"
+  },
 ]
