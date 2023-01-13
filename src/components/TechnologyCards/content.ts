@@ -35,6 +35,11 @@ export const mySkills = [
     title: "Git"
   },
   {
+    image: "skills/redux.svg",
+    alt: "Redux logo",
+    title: "Redux"
+  },
+  {
     image: "skills/api.svg",
     alt: "API logo",
     title: "REST API"

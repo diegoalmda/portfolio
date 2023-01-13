@@ -39,6 +39,15 @@ const pt = {
     message2: " e o repositório de outros projetos no ",
     list: [
       {
+        name: "Agência de Viagens",
+        live: "",
+        repo: "",
+        message: "Em breve!",
+        image: "projects/travelagency.png",
+        technologies: ["HTML", "CSS", "ReactJS", "React Router Dom", "Context API", "Styled components", "Phosphor icons", "Date-fns", "Node.js", "Express Framework", "JWT"],
+        text: "É um projeto Full Stack para uma agência de viagens. São 2 front-ends React que se comunicam com uma API criada em Node.js, para cadastrar promoções, grupos de viagens, usuários do sistema, entre outros. Um front será a página principal da agência, onde os clientes irão acessar e verificar promoções e grupos disponíveis de viagem, a partir de informações trazidas via requisições REST à API. O outro front, se trata de um portal administrativo, onde será feito o controle de todo o conteúdo não-estático que irá aparecer no site."
+      },
+      {
         name: "Ignite Call",
         live: "https://nextjs-ignite-call.vercel.app/",
         repo: "https://github.com/diegoalmda/nextjs-ignite-call",
@@ -64,16 +73,7 @@ const pt = {
         image: "projects/ignews.png",
         technologies: ["HTML", "CSS", "ReactJS", "Next.js", "TypeScript", "SASS", "Next-Auth", "Stripe", "FaunaDB", "Prismic CMS", "Github Authentication"],
         text: "O projeto tem como objetivo o estudo e desenvolvimento de uma aplicação com ReactJS e NextJS para listagem de posts e sistema de assinatura em um blog de notícias. Onde os usuários pagam para ter acesso. O acesso às postagens é liberado quando há uma inscrição ativa no Stripe. Caso não exista assinatura ativa para o usuário logado a partir do Github, só será exibido apenas um resumo das notícias ao usuário. Os meios de pagamento da aplicação são integrados com a API do Stripe, e utilizado o FaunaDB para armazenar as informações. As postagens são exibidas a partir do CMS Prismic.io. A aplicação foi construída com modelo Serveless, sem necessidade de criar uma API externa para manipular os dados."
-      },
-      {
-        name: "Agência de Viagens",
-        live: "",
-        repo: "",
-        message: "Em breve!",
-        image: "projects/travelagency.png",
-        technologies: ["HTML", "CSS", "ReactJS", "React Router Dom", "Context API", "Styled components", "Phosphor icons", "Date-fns", "Node.js", "Express Framework", "JWT"],
-        text: "É um projeto Full Stack para uma agência de viagens. São 2 front-ends React que se comunicam com uma API criada em Node.js, para cadastrar promoções, grupos de viagens, usuários do sistema, entre outros. Um front será a página principal da agência, onde os clientes irão acessar e verificar promoções e grupos disponíveis de viagem, a partir de informações trazidas via requisições REST à API. O outro front, se trata de um portal administrativo, onde será feito o controle de todo o conteúdo não-estático que irá aparecer no site."
-      },
+      },      
     ]
   },
   skills: {
@@ -126,6 +126,15 @@ const en = {
     message2: " and some other project's code on ",
     list: [
       {
+        name: "Travel agency",
+        live: "",
+        repo: "",
+        message: "Coming soon!",
+        image: "projects/travelagency.png",
+        technologies: ["HTML", "CSS", "ReactJS", "React Router Dom", "Context API", "Styled components", "Phosphor icons", "Date-fns", "Node.js", "Express Framework", "JWT"],
+        text: "It's a Full Stack project for a travel agency. There are 2 React front-ends that communicate with an API created in Node.js, to register promotions, travel groups, system users, among other functionalities. One front will be the agency's main page, where customers will be able to access and check available promotions and travel groups, based on information brought by REST requests to the API. The other front is an administrative portal, where all non-static content will be controlled."
+      },
+      {
         name: "Ignite Call",
         live: "https://nextjs-ignite-call.vercel.app/",
         repo: "https://github.com/diegoalmda/nextjs-ignite-call",
@@ -151,16 +160,7 @@ const en = {
         image: "projects/ignews.png",
         technologies: ["HTML", "CSS", "ReactJS", "Next.js", "TypeScript", "SASS", "Next-Auth", "Stripe", "FaunaDB", "Prismic CMS", "Github Authentication"],
         text: "The project aims to study and develop an application with ReactJS and NextJS to list posts and subscribe to a news blog. Where users pay for access. The access to posts is granted when there is an active Stripe subscription. If there is no active subscription for the user logged into Github, only a news summary will be shown to the user. The app's payment methods are integrated with the Stripe API, and FaunaDB is used to store the information. Posts are displayed on CMS Prismic.io. The application was built using a Serveless model, without the need to create an external API to manipulate the data."
-      },
-      {
-        name: "Travel agency",
-        live: "",
-        repo: "",
-        message: "Coming soon!",
-        image: "projects/travelagency.png",
-        technologies: ["HTML", "CSS", "ReactJS", "React Router Dom", "Context API", "Styled components", "Phosphor icons", "Date-fns", "Node.js", "Express Framework", "JWT"],
-        text: "It's a Full Stack project for a travel agency. There are 2 React front-ends that communicate with an API created in Node.js, to register promotions, travel groups, system users, among other functionalities. One front will be the agency's main page, where customers will be able to access and check available promotions and travel groups, based on information brought by REST requests to the API. The other front is an administrative portal, where all non-static content will be controlled."
-      },
+      },      
     ]
   },
   skills: {
