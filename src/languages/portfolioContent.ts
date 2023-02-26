@@ -39,6 +39,15 @@ const pt = {
     message2: " e o repositório de outros projetos no ",
     list: [
       {
+        name: "Projeto Petshop",
+        live: "https://www.figma.com/file/XlutnqhOjVf8PRRpm32MGt/PetShop?node-id=3%3A9&t=4yeRYg5vEhO9le9O-1",
+        repo: "",
+        message: "Código em breve!",
+        image: "projects/petshop.png",
+        technologies: ["Figma"],
+        text: "Projeto de um website de petshop com cadastro de clientes e calendário de agendamento de banho, tosa e hospedagem."
+      },
+      {
         name: "Agência de Viagens",
         live: "",
         repo: "",
@@ -125,6 +134,15 @@ const en = {
     message1: "You can see more information about me on ",
     message2: " and some other project's code on ",
     list: [
+      {
+        name: "Petshop",
+        live: "https://www.figma.com/file/XlutnqhOjVf8PRRpm32MGt/PetShop?node-id=3%3A9&t=4yeRYg5vEhO9le9O-1",
+        repo: "",
+        message: "Coming soon!",
+        image: "projects/petshop.png",
+        technologies: ["Figma"],
+        text: "Petshop website with customer registration and scheduling of bathing, grooming and accommodation."
+      },
       {
         name: "Travel agency",
         live: "",
