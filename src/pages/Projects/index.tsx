@@ -56,7 +56,12 @@ export function Projects() {
                   </div>
                 </div>
                 <div className="text-container">
-                  <div className="scroll-signal"><span className="scrolling-tag">{`${selectedLanguage.selected === "en" ? "Scroll": "Rolagem"}`}</span><ArrowElbowRightDown size={20} /></div>
+                  <div className="scroll-signal">
+                    {/* <span className="scrolling-tag">
+                      {`${selectedLanguage.selected === "en" ? "Scroll": "Rolagem"}`}
+                    </span>
+                    <ArrowElbowRightDown size={20} /> */}
+                  </div>
                   <div className="project-info">
                     <div className="text-content">
                       <h2>{project.name}</h2>
