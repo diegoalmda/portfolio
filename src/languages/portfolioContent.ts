@@ -17,7 +17,7 @@ const pt = {
     subtitle: "Um pouco",
     secondTitle: "Principais tecnologias",
     message: "Veja mais...",
-    text: "Sou tecnólogo em Telemática e atuo como desenvolvedor Web desde 2020. Tenho desenvolvido projetos utilizando principalmente a linguagem Javascript, tanto no front quanto no back-end. Atualmente tenho trabalhado com foco em ReactJS, React Native e Node.js. Estou cada vez mais empolgado com as tecnologias de desenvolvimento para web e dispositivos móveis. Me vejo como desenvolvedor full stack devido às tecnologias com as quais trabalho e procuro manter os estudos sempre em dia para acompanhar as novidades no que diz respeito ao desenvolvimento de software como um todo."
+    text: "Sou tecnólogo em Telemática, com mais de 3 anos de experiência atuando como desenvolvedor web. Tenho conhecimento em desenvolvimento de sistemas para Web e mobile com foco na linguagem JavaScript e bibliotecas React, React Native e Node.js. Conheço técnicas avançadas de SEO para otimização de sites e de acessibilidade, permitindo que a experiência do usuário se torne mais inclusiva. Também domino os recursos de responsividade da web. Já trabalhei com diversos mecanismos e bibliotecas de manipulação de dados no Node.js, sejam query builders, ORMs, ou até mesmo queries SQL nativas. Possuo conhecimento avançado em Next.js, Node.js, Typescript, criação e consumo de APIs REST ou GraphQL e com desenvolvimento orientado a testes. Consigo criar uma aplicação desde o projeto do design em ferramentas como o Figma, utilizando técnicas de UX, até a integração do front com o back-end e o deploy com integração e entregas contínuas."
   },
   contact: {
     title: "Contato",
@@ -113,7 +113,7 @@ const en = {
     subtitle: "Some info",
     secondTitle: "Main technologies",
     message: "See more...",
-    text: "I am a Telematics technologist and a freelance full-stack developer who started the professional career in early 2020. I intend to continue studying and dedicating myself to developing my career in this environment that has always been my true passion. I have been dedicated to studying the JavaScript language and some frameworks related to it, but I do not intend to limit myself to the language. I am willing to dedicate myself to other technologies as soon as possible. I want to keep evolving and learning something new every day."
+    text: "I am a technologist in Telematics, with more than 3 years of experience working in Front-end. I have knowledge in web and mobile applications development focusing on JavaScript language and React and React Native libraries. I know advanced SEO techniques for website optimization and accessibility, allowing the user experience to become more inclusive. I also master web responsiveness resources, favoring the use of applications on devices with different screen sizes while maintaining a great user experience. I have advanced knowledge in Next.js, Typescript, REST APIs or GraphQL and with test-oriented development. I can create an application from the design project in tools such as Figma, using UX techniques, to deployment with continuous integration and deliveries, always focusing on good practices. I have a flexible profile, which allows me to work in different areas and activities at the same time in an organized way, knowing how to distinguish between more urgent tasks and non-urgent tasks. Working this way, I can stay focused when I'm under a lot of demand, which allows me to deliver projects on time."
   },
   contact: {
     title: "Contact",
